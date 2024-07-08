@@ -35,9 +35,9 @@ const About = () => {
           <div className="profile">
             <div className="profile-text">
               <p>
-                I am a passionate front-end development student with a solid foundation in HTML, CSS, and knowledge of React. I am committed to my learning and constantly seeking new technologies and functions in this field. Currently, I am honing my skills on the Coursera platform.
+              Soy un apasionado estudiante de desarrollo front-end con una sólida base en HTML, CSS y conocimientos en React. Estoy comprometido con mi aprendizaje y en constante búsqueda de nuevas tecnologías y funciones en este campo. Actualmente, estoy perfeccionando mis habilidades en la plataforma de Coursera.
 
-                My goal is to become a professional developer, and I am eager to put what I have learned into practice. While I do not yet have formal work experience, I am highly motivated to gain practical experience. I would love to learn to work remotely in a team and contribute my skills and enthusiasm to a development team.
+Mi objetivo es convertirme en un desarrollador profesional y estoy ansioso por poner en práctica lo que he aprendido. Aunque aún no tengo experiencia laboral formal, estoy altamente motivado para adquirir experiencia práctica. Me gustaría aprender a trabajar en equipo de manera remota y contribuir con mis habilidades y entusiasmo a un equipo de desarrollo.
               </p>
             </div>
             <div className="profile-photo">

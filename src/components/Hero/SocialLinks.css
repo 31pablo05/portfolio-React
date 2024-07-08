@@ -1,12 +1,13 @@
 .social-links {
     margin-top: 20px;
+    color: #24fcdf;
   }
   
   .social-link {
     display: inline-block;
     margin-right: 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: #24fcdf;
     border: 2px solid #24fcdf;
     border-radius: 5px;
     padding: 10px 15px;
