@@ -76,7 +76,7 @@ Mi objetivo es convertirme en un desarrollador profesional y estoy ansioso por p
                   <li>Preparación para Entrevistas de Codificación</li>
                 </ul>
               </li>
-              {/* Add more studies as needed */}
+              
             </ul>
           </div>
         )}

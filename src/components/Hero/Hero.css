@@ -36,7 +36,7 @@
   }
   
   .intro h2 {
-    font-size: 1.8em;
+    font-size: 2.5em;
     color: #24fcdf;
     margin-top: 10px;
   }
@@ -80,4 +80,39 @@
       width: 300px;
     }
   }
-  
+  /* styles.css */
+
+.intro {
+  position: relative; /* Añadimos posición relativa para el efecto de aparición */
+}
+
+.role {
+  font-size: 1.8em;
+  color: #24fcdf;
+  margin-top: 10px;
+  position: relative; /* Posición absoluta para controlar la animación */
+  top: 0; /* Ajustamos la posición inicialmente en la parte superior */
+  left: 0; /* Inicialmente alineado a la izquierda */
+  right: 100px;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.animated {
+  animation: slide-in-out 7s ease-in-out infinite; /* Animación repetida */
+}
+
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(-20%); /* Inicia fuera de la vista a la izquierda */
+    opacity: 0; /* Inicialmente oculto */
+  }
+  50%, 50% {
+    opacity: 2; /* Muestra el texto durante el 80% del ciclo de animación */
+  }
+  100% {
+    transform: translateX(20%); /* Vuelve a desaparecer a la derecha al final de la animación */
+    opacity: 0; /* Oculta al final de la animación */
+  }
+}
+
+/* Estilos adicionales según sea necesario */
