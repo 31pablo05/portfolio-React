@@ -1,0 +1,18 @@
+.portafolio {
+  padding: 50px;
+  text-align: center;
+}
+
+.portafolio h2 {
+  font-size: 2em;
+  color: #24fcdf;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas, ajustar según sea necesario */
+  gap: 20px; /* Espacio entre los proyectos */
+}
+
+/* Estilos adicionales según sea necesario */

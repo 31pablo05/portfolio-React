@@ -1,0 +1,111 @@
+.sobre-mi {
+  padding: 50px;
+  background-color: #c0093c;
+  color: #fff;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 4em;
+  color: #24fcdf;
+  margin-bottom: 20px;
+}
+
+.sobre-mi .tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sobre-mi .tab {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 2em;
+}
+
+.sobre-mi .tab.active {
+  background-color: #00f;
+}
+
+.sobre-mi .tab:hover {
+  background-color: #555;
+}
+
+.sobre-mi .tab-content {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 900px; /* Incrementa el ancho máximo */
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px; /* Incrementa el ancho máximo */
+  margin: 0 auto;
+}
+
+.profile-text {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 60%;
+  text-align: left;
+}
+
+.profile-text p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  max-width: 35%;
+  order: 2;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  object-fit: cover;
+  max-width: 400px; /* Ajusta el tamaño máximo de la foto */
+}
+
+.sobre-mi .skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-icon {
+  font-size: 7em;
+  color: #fff;
+}
+
+.sobre-mi .buttons {
+  margin-top: 20px;
+}
+
+.sobre-mi .contact-button, .sobre-mi .cv-button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 1.1em;
+}
+
+.sobre-mi .contact-button:hover, .sobre-mi .cv-button:hover {
+  background-color: #555;
+}
