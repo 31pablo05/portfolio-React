@@ -1,22 +1,22 @@
+/* Añadiendo estilo adicional para .nav-links */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li a {
-    font-size: 30px;
-    text-decoration: none;
-    color: #c0093c;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-links li a:hover {
-    background-color: #c0093db0;
-    border-radius: 20px;
-  }
-  
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #c0093c;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
