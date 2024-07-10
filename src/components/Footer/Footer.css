@@ -1,0 +1,18 @@
+.footer {
+    background-color: #c0093c; /* Ajusta el color de fondo según prefieras */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 100px; /* Ajusta el tamaño del logo según prefieras */
+    height: auto;
+  }
+  

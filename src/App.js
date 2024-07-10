@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer/Footer'; // Asegúrate de que la ruta sea correcta
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Portfolio />
         <Contact />
       </main>
+      <Footer /> {/* Añade el Footer aquí */}
     </div>
   );
 }
