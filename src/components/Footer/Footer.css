@@ -1,18 +1,51 @@
 .footer {
-    background-color: #c0093c; /* Ajusta el color de fondo según prefieras */
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
+ 
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para mejor adaptación */
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100px; /* Ajusta el tamaño del logo según prefieras */
+  height: auto;
+  margin-bottom: 15px; /* Espacio entre el logo y los enlaces */
+border-radius: 25px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos de redes sociales */
+  margin-bottom: 15px; /* Espacio entre los enlaces y el copyright */
+}
+
+.social-link {
+  color: #fff; /* Color blanco para los íconos */
+  font-size: 1.5em; /* Tamaño de los íconos */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.social-link:hover {
+  color: #24fcdf; /* Color al hacer hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff; /* Borde superior */
+  padding-top: 10px; /* Espacio superior para el texto */
+}
+
+.footer-bottom p {
+  margin: 0; /* Eliminar márgenes para un diseño más limpio */
+}
+
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Asegurarse que los elementos se apilen en móviles */
   }
-  
-  .footer-logo {
-    width: 100px; /* Ajusta el tamaño del logo según prefieras */
-    height: auto;
-  }
-  
+}

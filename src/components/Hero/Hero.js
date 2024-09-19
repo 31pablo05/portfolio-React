@@ -4,7 +4,7 @@ import Intro from './Intro';
 import Photo from './Photo';
 
 const Hero = () => (
-  <section className="hero">
+  <section className="hero" aria-label="Introducción de Pablo Proboste">
     <Intro />
     <Photo />
   </section>

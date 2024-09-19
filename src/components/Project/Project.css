@@ -1,18 +1,24 @@
 .project {
   width: 100%;
   max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
-  margin: 0 auto;
+  margin: 20px auto; /* Añadir margen vertical */
   text-align: left;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: #ffffff; /* Blanco para un contraste limpio */
+  border-radius: 15px; /* Bordes más redondeados */
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Transición para el efecto hover */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
 }
 
 .project-image {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-bottom: 4px solid #c0093c; /* Borde inferior para resaltar la imagen */
 }
 
 .project-details {
@@ -36,25 +42,10 @@
   font-size: 1.5em;
 }
 
-.technology-icon > svg {
-  vertical-align: middle;
-}
-
-.technology-icon.fa-html5 {
-  color: #e34f26; /* Naranja */
-}
-
-.technology-icon.fa-css3-alt {
-  color: #1572b6; /* Azul */
-}
-
-.technology-icon.fa-js {
-  color: #f7df1e; /* Amarillo */
-}
-
-.technology-icon.fa-react {
-  color: #61dafb; /* Azul claro */
-}
+.technology-icon.fa-html5 { color: #e34f26; }
+.technology-icon.fa-css3-alt { color: #1572b6; }
+.technology-icon.fa-js { color: #f7df1e; }
+.technology-icon.fa-react { color: #61dafb; }
 
 .project-link {
   display: block;
@@ -62,9 +53,21 @@
   text-align: center;
   color: #c0093c;
   text-decoration: none;
+  transition: color 0.3s; /* Transición para el hover */
+}
+
+.project-link:hover {
+  color: #24fcdf; /* Cambia el color al hacer hover */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para un efecto adicional */
 }
 
 .external-link-icon {
   margin-left: 5px;
   font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .project {
+    max-width: 90%; /* Se ajusta el ancho en dispositivos más pequeños */
+  }
 }

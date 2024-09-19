@@ -7,9 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #c0093c; /* Fondo predeterminado del cuerpo */
+  background: linear-gradient(to right, #24fcdf ,#c0093c ); /* Gradiente de fondo
   color: #c0093c; /* Color de texto predeterminado */
+
 }
+
 
 .App {
   text-align: center;

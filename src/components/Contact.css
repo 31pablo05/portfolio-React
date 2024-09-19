@@ -1,14 +1,12 @@
-/* Contact.css */
-
 .contactame {
-  background-color: #c0093c; /* Color de fondo */
+ 
   padding: 20px;
 }
 
 .contact-content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start; /* Cambiado a flex-start para mejor alineación */
   flex-wrap: wrap;
 }
 
@@ -20,7 +18,7 @@
 
 .contact-button {
   display: inline-block;
-  background-color: #444; /* Color de fondo predeterminado */
+  background-color: #444; 
   color: #24fcdf;
   padding: 15px 20px;
   border: none;
@@ -28,43 +26,27 @@
   cursor: pointer;
   font-size: 18px;
   text-align: left;
-  text-decoration: none; /* Para quitar el subrayado de los enlaces */
+  text-decoration: none; 
 }
 
 .contact-button.whatsapp {
-  background-color: #25D366; /* Color de fondo para WhatsApp */
+  background-color: #25D366; 
 }
 
 .contact-button.gmail {
-  background-color: #DB4437; /* Color de fondo para Gmail */
+  background-color: #DB4437; 
 }
 
 .contact-button.download-cv {
-  background-color: #555555; /* Color de fondo para Descargar CV */
-}
-
-.contact-info-form {
-  background-color:#24fcdf; /* Color de fondo del formulario de información */
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px; /* Ancho del formulario */
-}
-
-.contact-info-form h2 {
-  font-size: 2em;
-  color: #24fcdf; /* Color del título */
-}
-
-.contact-info-form p {
-  margin-bottom: 20px;
-  font-size: 1.2em;
-  color: #24fcdf; /* Color del texto */
+  background-color: #555555; 
 }
 
 .contact-form {
-  background-color: #24fcdf; /* Color de fondo del formulario de contacto */
+  background-color: #24fcdf; 
   padding: 20px;
   border-radius: 10px;
+  flex: 1; /* Permitir que el formulario ocupe espacio disponible */
+  max-width: 400px; /* Ancho máximo del formulario */
 }
 
 .contact-form form {
@@ -78,19 +60,12 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
-
-.contact-form .privacy {
-  display: flex;
-  align-items: center;
-}
-
-.contact-form .privacy a {
-  margin-left: 5px;
+  box-sizing: border-box;
+  width: 100%; /* Asegura que los campos ocupen el 100% del ancho disponible */
 }
 
 .contact-form button {
-  background-color: #c0093c; /* Color de fondo del botón de enviar */
+  background-color: #c0093c; 
   color: white;
   padding: 10px;
   border: none;
@@ -99,5 +74,22 @@
 }
 
 .contact-form button:hover {
-  background-color: #1e3a1e; /* Color de fondo del botón de enviar al pasar el ratón */
+  background-color: #1e3a1e; 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+  }
+
+  .contact-form {
+    max-width: 100%; /* Permitir que el formulario ocupe el 100% en pantallas pequeñas */
+  }
+
+  .contact-button {
+    width: 100%; /* Botones ocupan el 100% del ancho en pantallas pequeñas */
+    text-align: center; /* Centrar texto en botones */
+  }
 }

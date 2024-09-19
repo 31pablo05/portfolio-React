@@ -3,9 +3,9 @@ import './NavLinks.css';
 
 const NavLinks = () => {
   return (
-    <nav>
+    <nav role="navigation">
       <ul className="nav-links">
-        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
         <li><a href="#contactame">Contáctame</a></li>
       </ul>

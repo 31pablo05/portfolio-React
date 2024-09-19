@@ -5,7 +5,7 @@ import NavLinks from './NavLinks';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" role="banner">
       <Logo />
       <NavLinks />
     </header>

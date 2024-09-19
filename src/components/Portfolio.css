@@ -11,8 +11,19 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas, ajustar según sea necesario */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
   gap: 20px; /* Espacio entre los proyectos */
 }
 
-/* Estilos adicionales según sea necesario */
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+}

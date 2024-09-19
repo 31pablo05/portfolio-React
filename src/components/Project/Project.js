@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'; // Importa los íconos de enlace externo y GitHub
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const Project = ({ imageUrl, link, githubLink, description, technologies }) => (
   <div className="project">
@@ -31,7 +31,7 @@ const Project = ({ imageUrl, link, githubLink, description, technologies }) => (
 );
 
 const getTechnologyIconClassName = (tech) => {
-  switch (tech.key) {
+  switch (tech) {
     case 'html':
       return 'fa-html5';
     case 'css':
